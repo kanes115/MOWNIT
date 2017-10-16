@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <cmath>
 #include <stdlib.h>
@@ -59,7 +60,7 @@ void double_forward() {
 
 void double_backward() { 
     cout << "Backward: " << endl;
-    
+
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
 
@@ -72,6 +73,7 @@ void double_backward() {
 
 int main(){
     
+    cout.precision(15);
     double_forward();
 
 }
